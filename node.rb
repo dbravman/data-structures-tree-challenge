@@ -1,5 +1,5 @@
 class Node
-  
+  attr_reader :value, :children
 
   def initialize(value)
     @value = value
@@ -8,13 +8,5 @@ class Node
 
   def add_child(child)
     @children << child
-  end
-
-  def value
-    @value
-  end
-
-  def children
-    
   end
 end
