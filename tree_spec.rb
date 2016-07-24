@@ -12,7 +12,9 @@ describe Tree do
     root.add_child(divtree)
     root.add_child(Node.new("div"))
     tree = Tree.new(root)
-    node = tree.search {"b"}
-    expect(node.value).to eq("b")
+    node1 = tree.search {"b"}
+    expect(node1.value).to eq("b")
+    node2 = tree.search {"c"}
+    expect(node2).to be(nil)
   end
 end
